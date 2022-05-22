@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.form__area {
+  width: min(25rem, 90%);
+  margin-inline: auto;
+  margin-top: 2em;
+}
+
+.input__area {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
