@@ -7,6 +7,9 @@
 body {
   background-color: #262626;
   color: #ffffff;
+  height: 100vh;
+  display: grid;
+  align-items: center;
 }
 
 input,
@@ -15,10 +18,13 @@ textarea {
   padding: 1em 2em;
 }
 
+.application {
+  margin: auto;
+}
+
 .form__area {
   width: min(25rem, 90%);
   margin-inline: auto;
-  margin-top: 2em;
 }
 
 .input__area {
@@ -26,4 +32,19 @@ textarea {
   flex-direction: column;
   gap: 1em;
   margin-bottom: 2em;
+}
+
+.send__btn {
+  background-color: #ffffff;
+  color: #262626;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em 2em;
+  font-size: 1rem;
+}
+
+.send__btn:hover {
+  background-color: #262626;
+  color: #ffffff;
+  outline: 1px solid #ffffff;
 }

@@ -29,12 +29,19 @@ export function App() {
       <div className="form__area">
         <form ref={form} onSubmit={sendEmail} className="form">
           <div className="input__area">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email Adress"
+              required
             />
             <textarea
               name="message"
@@ -42,9 +49,10 @@ export function App() {
               placeholder="Your message"
               cols="30"
               rows="10"
+              required
             ></textarea>
           </div>
-          <input type="submit" value="Send" />
+          <input className="send__btn" type="submit" value="Send" />
         </form>
       </div>
     </div>
